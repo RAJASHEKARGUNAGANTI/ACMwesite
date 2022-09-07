@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM-home2</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        html {
+          scroll-behavior: smooth;
+          scroll-padding-top: 90px;
+        }
+        header{
+            position:sticky;
+            top: 0;
+            background-color: rgb(240, 248, 255);
+        }
+        body{
+            background-color: white;
+            background-position: scroll;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            background-size: cover;
+
+          
+        }
+        .home-sec ,.img{
+          margin-left: 10%;
+          margin-right: 10%;
+          position: relative;
+          background-repeat: none;
+          background-size: cover;
+          z-index: -1;
+
+        }
+        .navigation {
+            margin-bottom: 1px ;
+            background-color:rgba(199, 229, 241, 0.214);
+            width: 86%;
+            height: 80px;
+            padding: 20px;
+            padding-left: 200px;
+            align-items: center;
+            display:inline-flex;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .logo{
+            padding-top: 10px;
+        }
+        .navbar{
+            width: 90%;
+            z-index: 10000;
+        }
+        .navbar ul{
+            text-align: right;
+        }
+       .event-sec ul li,.navbar ul li {
+            text-decoration: none;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: inline-flex;
+        }
+        .navbar ul li:hover{
+            background-color: #6ab6de;
+            border-radius: 20px;
+            transition: 0.7s ease;
+
+        }
+        .navbar ul li a{
+            color: black;
+            text-decoration: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .event-sec ul li a{
+          color: rgb(0, 1, 1);
+            text-decoration: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .card{
+             /* Add shadows to create the "card" effect */
+             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+             transition: 0.3s;
+             background-color: rgba(255, 255, 255, 0.999);
+             border-radius: 20px;
+             margin: 20px;
+             height: 12cm;
+             width: 9cm;
+           }
+
+         /* On mouse-over, add a deeper shadow */
+         .card:hover {
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+           border-radius: 50px;
+           border-top: 50px;
+           height: 12.02cm;
+           width: 9.02cm;
+         }
+         .card img{
+             border-radius:20px 20px 0 0 ;
+             
+         }
+         /* Add some padding inside the card container */
+         .container2 {
+           padding: 2px 16px;
+         }
+         
+         .team-sec{      
+           text-align: center; padding-top: 30px;
+           align-items: center;background-color: rgba(14, 159, 244, 0.332); 
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+           z-index: 1;
+         
+         }
+         .team-sec:hover{
+           z-index: -1;
+           scroll-behavior: smooth;
+           scroll-snap-type: mandatory;
+         } 
+        
+         
+             </style>
+</head>
+
+    <header>
+    <nav class="navigation" style="background-attachment: fixed;position: sticky;">
+        <div class="logo"><img src="./images/acm-vjit-logo.png" alt="acm-vjit logo" height="90px"></div>
+        <div class="navbar">
+            <ul>                
+                <li><a href="#home" target="_self">Home</a> </li>
+                <li><a href="#events" target="_self">Events</a> </li>
+                <li><a href="#team" target="_self">Team</a> </li>
+                <li><a href="#about" target="_self">About us</a> </li>
+                <li><a href="#contact" target="_self">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="logo" style="padding-left: 70px;"><img src="./images/acm-log0.png" alt="vjit logo" height="80px"></div>
+
+    </nav>
+</header>
+<body>
+<section>
+    <div id="home" class="container" style="text-align:center; padding-top:50px; font-size: 30px; ">
+        <h1>Hello...</h1>
+    <div class="home-sec" style="background-image:linear-gradient(rgba(14, 159, 244, 0.332),rgba(14, 159, 244, 0.332)), url(./images/vjit-campus.jpg); border-top-left-radius: 40px; border-top-right-radius: 40px; height: 10cm;">
+        
+    </div>
+</div>
+</section>
+<section>
+    <div id="events" class="container"style="text-align:center; padding-top:50px; font-size: 30px; padding-left:10%;padding-right:10%;">
+        <h1>Events</h1>
+    <div class="event-sec" style="height: 10cm; background-image:linear-gradient(rgba(14, 159, 244, 0.332),rgba(14, 159, 244, 0.332)), 
+    url(./images/event.jpg); box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);background-repeat: none;
+          background-size: cover;">
+        <div style="display: inline-flex; padding: 30px;text-decoration: none; font-family:sans-serif ">
+            <ul style="padding:20px; padding-left: 60px; text-decoration-color: black;">
+                <li><a href="#"> Event .....................1</a></li>
+                <li><a href="#"> Event .....................1</a></li>
+                <li><a href="#"> Event .....................1</a></li>
+                <li><a href="#"> Event .....................1</a></li>
+                <li><a href="#"> Event .....................1</a></li>
+                <li><a href="#"> Event .....................1</a></li>
+            </ul>
+            <ul style="padding:20px; padding-left:450px;">
+                <li><a href="#"> Event .....................2</a></li>
+                <li><a href="#"> Event .....................2</a></li>
+                <li><a href="#"> Event .....................2</a></li>
+                <li><a href="#"> Event .....................2</a></li>
+                <li><a href="#"> Event .....................2</a></li>
+                <li><a href="#"> Event .....................2</a></li>
+            </ul>
+        </div> 
+    </div></div>
+</section>
+<section id="team">
+    <div class="container"  style="   text-align: center; font-size:30px; width: 80%; padding-left: 10%; padding-top: 50px;" >
+        <h1>Team</h1>
+    <div class="team-sec" data-flickity='{ "cardAlign": "center", "contain": true ,"autoPlay":true , "pauseAutoPlayOnHover": true}'>
+           <div class="card">
+            <img src="./images/rajeshwar.jpg" alt="Avatar" style="width:100%;" height="60%" >
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Dr. P. Rajeshwar Reddy</b></h4>
+              <p>Secretary and Correspondent</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/neelima.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2" style="padding-top: 30px;">
+              <h4><b>S. Neelima</b></h4>
+              <p>Joint Secretary</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/saibaba.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Dr E Sai Baba Reddy</b></h4>
+              <p>Director</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/padmaja.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Dr A Padmaja</b></h4>
+              <p>Principal</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/chalam.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Mr R Venkata Chalam</b></h4>
+              <p>Sr. A.O</p>
+            </div>
+          </div><div class="card">
+            <img src="./images/srilatha.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Ms G Sree Latha</b></h4>
+              <p>Academic Coordinator</p>
+            </div>
+          </div><div class="card">
+            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Elon Musk</b></h4>
+              <p>Twitter owner</p>
+            </div>
+          </div>
+    </div>
+</div>
+</section>
+
+<section>
+    <div id="about" class="container" style="text-align:center; padding-top:85px; font-size: 30px;">
+        <h1>About us</h1>
+    <div class="about-sec" style="border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;height: 10cm; background-color: rgba(14, 159, 244, 0.332); width: 80%;display:inline-flex; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);" >
+      <div><img src="./images/developers.jpg" alt="..." style="height:8cm;width:8cm; padding: 40px;"></div>
+        <div><h4 style="padding: 20px;">Here is to know about us</h4>
+            <p style="padding: 10px;">How does student use technology?
+                Students use technology to meet, collaborate and create content virtually. In many cases, technology helps students research subjects, share ideas and learn specific skills. Technology also helps students make valuable networking connections with others in their field of study.</p>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+<footer style="height:12cm; background-color: rgba(42, 50, 56, 0.755);">
+    <div id="contact" class="contact-sec" style="text-align:center; padding-top:30px; font-size: 30px; height: 10cm;">
+        <div><h1>Contact</h1></div>
+        <div style="display: inline-flex;">
+          <ul style="padding: 30px; ">
+            <li style="text-decoration: none;">...........1</li>
+            <li>...........1</li>
+            <li>...........1</li>
+            <li>...........1</li>
+          </ul>
+          <ul style="padding: 30px;">
+            <li>...........1</li>
+            <li>...........1</li>
+            <li>...........1</li>
+            <li>...........1</li>
+          </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+
+$('.team-sec').flickity({
+  // options
+  cardAlign: 'center',
+  contain: true,
+});
+
+var elem = document.querySelector('.team-sec');
+var flkty = new Flickity( elem, {
+  // options
+  cardAlign: 'center',
+  contain: true,
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.team-sec', {
+  // options
+});
+</script>
+</html>
