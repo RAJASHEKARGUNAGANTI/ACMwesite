@@ -27,8 +27,6 @@
             font-family: 'Times New Roman', Times, serif;
             font-weight: 400;
             background-size: cover;
-
-          
         }
         .home-sec ,.img{
           margin-left: 10%;
@@ -38,6 +36,13 @@
           background-size: cover;
           z-index: -1;
 
+        }
+        .home-sec p{
+          text-decoration: none;
+          color: whitesmoke;
+        }
+        .home-sec p B{
+          font-size: 40px;
         }
         .navigation {
             margin-bottom: 1px ;
@@ -60,7 +65,7 @@
         .navbar ul{
             text-align: right;
         }
-       .event-sec ul li,.navbar ul li {
+       .navbar ul li {
             text-decoration: none;
             padding: 10px;
             padding-left: 20px;
@@ -78,10 +83,17 @@
             text-decoration: none;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
+        .event-sec ul li{
+          text-decoration: none;
+            padding: 10px;
+            padding-left: 20px;
+            
+            display: inline-flex;
+        }
         .event-sec ul li a{
           color: rgb(0, 1, 1);
             text-decoration: none;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            
         }
         .card{
              /* Add shadows to create the "card" effect */
@@ -145,32 +157,36 @@
     </nav>
 </header>
 <body>
+  
 <section>
     <div id="home" class="container" style="text-align:center; padding-top:50px; font-size: 30px; ">
-        <h1>Hello...</h1>
-    <div class="home-sec" style="background-image:linear-gradient(rgba(14, 159, 244, 0.332),rgba(14, 159, 244, 0.332)), url(./images/vjit-campus.jpg); border-top-left-radius: 40px; border-top-right-radius: 40px; height: 10cm;">
-        
+        <h1>VJIT-ACM STUDENT CHAPTER</h1>
+    <div class="home-sec" style=" background-image:linear-gradient(rgba(74, 94, 107, 0.732),rgba(81, 162, 210, 0.732)), url(./images/vjit-campus.jpg); border-top-left-radius: 40px; border-top-right-radius: 40px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); height: 10cm;">
+        <P style="padding-top: 40px;"> <B>A</B>ssociative  for <B>C</B>omputer <B>M</B>achinary is a global scientific and educational organization dedicated to advancing the art, science, engineering, and application of computing,
+           serving both professional and public interests by fostering the open exchange of information and by promoting the highest professional and ethical standards.
+          ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. ACM supports the professional growth of its members by providing opportunities 
+          for life‐long learning, career development, and professional networking. 
+          </P>
     </div>
 </div>
 </section>
 <section>
     <div id="events" class="container"style="text-align:center; padding-top:50px; font-size: 30px; padding-left:10%;padding-right:10%;">
         <h1>Events</h1>
-    <div class="event-sec" style="height: 10cm; background-image:linear-gradient(rgba(14, 159, 244, 0.332),rgba(14, 159, 244, 0.332)), 
+    <div class="event-sec" style="height: 10cm; background-image:linear-gradient(rgba(74, 94, 107, 0.732),rgba(81, 162, 210, 0.732)), 
     url(./images/event.jpg); box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);background-repeat: none;
           background-size: cover;">
-        <div style="display: inline-flex; padding: 30px;text-decoration: none; font-family:sans-serif ">
-            <ul style="padding:20px; padding-left: 60px; text-decoration-color: black;">
-                <li><a href="#"> Event .....................1</a></li>
-                <li><a href="#"> Event .....................1</a></li>
-                <li><a href="#"> Event .....................1</a></li>
+        <div style="display:inline-flex; padding: 10px;text-decoration: none; font-family:sans-serif ">
+            <ul style="padding:20px; padding-left: 40px; text-decoration-color: black;">
+              <h3 style="color: white;">Past Event</h3>
+                <li><a href="./acmEvent.html"> Awarenes on Computer Basics</a></li>
                 <li><a href="#"> Event .....................1</a></li>
                 <li><a href="#"> Event .....................1</a></li>
                 <li><a href="#"> Event .....................1</a></li>
             </ul>
-            <ul style="padding:20px; padding-left:450px;">
-                <li><a href="#"> Event .....................2</a></li>
-                <li><a href="#"> Event .....................2</a></li>
+            <ul style="padding:20px; padding-left:40px;">
+              <h3 style="color: white;">Upcoming Events </h3>
                 <li><a href="#"> Event .....................2</a></li>
                 <li><a href="#"> Event .....................2</a></li>
                 <li><a href="#"> Event .....................2</a></li>
@@ -182,7 +198,7 @@
 <section id="team">
     <div class="container"  style="   text-align: center; font-size:30px; width: 80%; padding-left: 10%; padding-top: 50px;" >
         <h1>Team</h1>
-    <div class="team-sec" data-flickity='{ "cardAlign": "center", "contain": true ,"autoPlay":true , "pauseAutoPlayOnHover": true}'>
+    <div class="team-sec" data-flickity='{ "cardAlign": "center", "contain": true ,"autoPlay":true , "pauseAutoPlayOnHover": true,"pageDots": false,"wrapAround": true ,"initialIndex": 1}'>
            <div class="card">
             <img src="./images/rajeshwar.jpg" alt="Avatar" style="width:100%;" height="60%" >
             <div class="container2"style="padding-top: 30px;">
@@ -223,7 +239,8 @@
               <h4><b>Ms G Sree Latha</b></h4>
               <p>Academic Coordinator</p>
             </div>
-          </div><div class="card">
+          </div>
+          <div class="card">
             <img src="./images/arunnakumari.jpg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>Dr D ArunaKumari</b></h4>
@@ -238,14 +255,14 @@
             </div>
           </div>
           <div class="card">
-            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <img src="./images/pkvSharma.jpg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>Mr PKV Sharma </b></h4>
               <p>Associate Professor-CSE</p>
             </div>
           </div>
           <div class="card">
-            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <img src="./images/hemanth.jpeg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>Gundu Hemanth Sai </b></h4>
               <p>ACMVJIT-Chair</p>
@@ -266,23 +283,79 @@
             </div>
           </div>
           <div class="card">
-            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <img src="./images/karthik.jpg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>G Karthik</b></h4>
               <p>ACMVJIT-Treasurer</p>
             </div>
           </div>
           <div class="card">
-            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <img src="./images/varun.jpeg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>Varun</b></h4>
               <p>ACMVJIT-Member</p>
             </div>
           </div>
           <div class="card">
-            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <img src="./images/rohith.jpg" alt="Avatar" style="width:100%" height="70%">
             <div class="container2"style="padding-top: 30px;">
               <h4><b>Rohit</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/vamshi.jpeg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Ananthagiri Vamshi Krishna</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Akshat</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/rishi.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Jampala Rishi krishna</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/nikhil.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Mudumala Nikhil</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/roshith.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Gajerla Roshith</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/danial.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Daniel Vincent Raj</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/jashwanth.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Oggu Jaswanth</b></h4>
+              <p>ACMVJIT-Member</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/jashwanth.jpg" alt="Avatar" style="width:100%" height="70%">
+            <div class="container2"style="padding-top: 30px;">
+              <h4><b>Oggu Jaswanth</b></h4>
               <p>ACMVJIT-Member</p>
             </div>
           </div>
@@ -328,6 +401,7 @@ $('.team-sec').flickity({
   // options
   cardAlign: 'center',
   contain: true,
+  
 });
 
 var elem = document.querySelector('.team-sec');
@@ -335,6 +409,7 @@ var flkty = new Flickity( elem, {
   // options
   cardAlign: 'center',
   contain: true,
+  
 });
 
 // element argument can be a selector string
